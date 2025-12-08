@@ -1,6 +1,6 @@
 # Hi, I'm Muhammad Saqib 👋
 
-**Full-stack Software Engineer** with 6+ years building scalable web applications. Deep frontend expertise in **React, Elm, Angular**; hands-on backend via **Golang & Node.js** projects (RESTful APIs, microservices, Docker, JWT). API collaboration across all roles, including 4+ years at **Paack**. Passionate about clean code; eager to grow into system design.
+**Full-stack Software Engineer** with 6+ years building scalable web applications. Deep frontend expertise in **React, Elm, Angular**; strong backend via **Golang & Node.js** (RESTful APIs, microservices, high-concurrency systems, Docker, JWT). API collaboration across all roles, including 4+ years at **Paack**. Passionate about clean code and scalable system design.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/segfaulter)
 [![Email](https://img.shields.io/badge/Email-muhammadsackib@gmail.com-blue?style=flat&logo=gmail)](mailto:muhammadsackib@gmail.com)
@@ -13,9 +13,10 @@
 | Category | Technologies |
 |--------|--------------|
 | **Languages** | Golang, SQL, JavaScript, TypeScript, Elm, HTML5, CSS3 |
-| **Backend** | RESTful APIs, Microservice Architecture, Node.js, JWT Authentication |
+| **Backend** | RESTful APIs, Microservice Architecture, Node.js, Express.js, JWT Authentication |
 | **Databases** | PostgreSQL, SQLite |
-| **Tools** | Docker, Git |
+| **Caching & Queues** | Redis, BullMQ |
+| **Tools** | Docker, Git, Turborepo |
 | **Frontend** | React, Preact, Angular, Redux, Immutable.js |
 
 ---
@@ -52,20 +53,24 @@
 
 ## 🚀 Personal Projects
 
-**Bookmarks Manager API (Golang)**  
-[github.com/segmentationfaulter/bookmarks-manager-api](https://github.com/segmentationfaulter/bookmarks-manager-api)  
+**TicketsHive (Node.js + TypeScript)**
+[github.com/segmentationfaulter/tickets_hive](https://github.com/segmentationfaulter/tickets_hive)
+High-concurrency event booking system built to handle thousands of simultaneous users competing for limited inventory. Architected with asynchronous job processing via **BullMQ & Redis**, optimistic locking in **PostgreSQL** for data integrity, and horizontally scalable API/worker services in a **Turborepo** monorepo. Achieves sub-100ms response times through async request-response pattern, full **TypeScript** type safety, and comprehensive error handling. Demonstrates production-grade patterns for flash sales and high-traffic scenarios.
+
+**Bookmarks Manager API (Golang)**
+[github.com/segmentationfaulter/bookmarks-manager-api](https://github.com/segmentationfaulter/bookmarks-manager-api)
 Designed secure, performant RESTful API in Golang using standard library. Implemented clean, layered microservice architecture for scalability and maintainability. Used SQLite for data storage with efficient raw SQL queries for CRUD operations. Secured endpoints with JWT authentication and bcrypt password hashing.
 
-**Real-world API (Node.js)**  
-[github.com/segmentationfaulter/realworld_api](https://github.com/segmentationfaulter/realworld_api)  
+**Real-world API (Node.js)**
+[github.com/segmentationfaulter/realworld_api](https://github.com/segmentationfaulter/realworld_api)
 Implemented the [RealWorld backend API specification](https://docs.realworld.build/specifications/backend/introduction/) — a production-grade Medium.com clone — using Node.js, Express, and PostgreSQL. Delivered comprehensive RESTful endpoint design, JWT authentication, and robust database modeling, then containerized the full application and database with Docker and Docker Compose for consistent, reproducible development and deployment environments.
 
-**Todo CLI (Golang)**  
-[github.com/segmentationfaulter/todo-cli-app](https://github.com/segmentationfaulter/todo-cli-app)  
+**Todo CLI (Golang)**
+[github.com/segmentationfaulter/todo-cli-app](https://github.com/segmentationfaulter/todo-cli-app)
 Command-line task manager in Go for adding, listing, completing, and deleting todos with JSON file storage, demonstrating idiomatic Go practices.
 
-**Hacker News PWA (React)**  
-[github.com/segmentationfaulter/hnpwa](https://github.com/segmentationfaulter/hnpwa)  
+**Hacker News PWA (React)**
+[github.com/segmentationfaulter/hnpwa](https://github.com/segmentationfaulter/hnpwa)
 Performant, responsive Progressive Web App for browsing Hacker News, built with React, showcasing component-based architecture and state management.
 
 ---
@@ -82,4 +87,4 @@ Performant, responsive Progressive Web App for browsing Hacker News, built with 
 - 📞 +92 315 0776708 (GMT+5)  
 - 🔗 [linkedin.com/in/segfaulter](https://linkedin.com/in/segfaulter)  
 
-> Open to collaborating on backend, full-stack, or system design projects. Always learning — currently exploring **gRPC, DDD, and distributed systems**! 🚀
+> Open to collaborating on backend, full-stack, or system design projects. Always learning — currently exploring **distributed systems, event-driven architectures, and scalability patterns**.
