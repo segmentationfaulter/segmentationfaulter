@@ -24,7 +24,7 @@
 
 **Independent Software Engineer** | Self-Employed (Remote)
 *Jul 2024 – Present*
-- Built and launched **Rishta Center** (rishta.center), a production matchmaking platform serving the Pakistani community — sole engineer handling all phases from spec/PRD and UI/UX through full-stack development to deployment
+- Built and launched **[Rishta Center](https://rishta.center)**, a production matchmaking platform serving the Pakistani community — sole engineer handling all phases from spec/PRD and UI/UX through full-stack development to deployment
 - Architected zero-cost infrastructure on **Cloudflare** (Workers, D1, R2, Images) with trunk-based CI/CD, automated **Drizzle ORM** migrations, isolated prod/staging/preview environments, and **PageSpeed Insights** scores of ~90 performance / 100 across all other metrics
 - Designed "Give-to-Get" community model with rate-limited contact reveals (5/day), anti-scraping protections, and audit logging to prevent commercial data harvesting
 - Built 100% **Urdu RTL** interface with mobile-first responsive design, dual-script input (Urdu/Roman Urdu), and accessibility optimized for older users
