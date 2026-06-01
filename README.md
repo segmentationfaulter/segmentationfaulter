@@ -1,6 +1,6 @@
 # Hi, I'm Muhammad Saqib 👋
 
-**Full-stack Software Engineer** with 6+ years building scalable web applications. Deep frontend expertise in **React, Elm, Angular**; strong backend via **Golang & Node.js** (RESTful APIs, microservices, high-concurrency systems, Docker, JWT). API collaboration across all roles, including 4+ years at **Paack**. Passionate about clean code and scalable system design.
+**Full-Stack Software Engineer** with 6+ years building and scaling production web applications, including shipping and operating a complete platform independently from concept to production. Deep frontend expertise in **React, Elm, Angular**; strong backend via **Golang & Node.js** (RESTful APIs, high-concurrency systems, Docker, JWT). API collaboration across all roles, including 4+ years at **Paack**. Passionate about clean code, functional programming, and scalable system design.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/segfaulter)
 [![Email](https://img.shields.io/badge/Email-muhammadsackib@gmail.com-blue?style=flat&logo=gmail)](mailto:muhammadsackib@gmail.com)
@@ -12,66 +12,69 @@
 
 | Category | Technologies |
 |--------|--------------|
-| **Languages** | Golang, SQL, JavaScript, TypeScript, Elm, HTML5, CSS3 |
-| **Backend** | RESTful APIs, Microservice Architecture, Node.js, Express.js, JWT Authentication |
-| **Databases** | PostgreSQL, SQLite |
-| **Caching & Queues** | Redis, BullMQ |
-| **Tools** | Docker, Git, Turborepo |
-| **Frontend** | React, Preact, Angular, Redux, Immutable.js |
+| **Languages** | JavaScript, TypeScript, Golang, SQL, Elm, HTML, CSS |
+| **Backend** | Node.js, Express.js, tRPC, RESTful APIs, Drizzle ORM, Zod, Better Auth (Multi-tenancy), JWT Authentication, Inngest (Background Jobs), Redis, BullMQ, Cloudflare (Workers, D1, R2, Images) |
+| **Databases** | PostgreSQL (ACID compliance, row-level locking, transaction management), SQLite |
+| **Tools** | Docker, Git, Turborepo, CI/CD (GitHub Actions), Vercel, Playwright, Vitest |
+| **Frontend** | React (Next.js App Router, TanStack Start), TypeScript, TanStack Query, TanStack Router, Tailwind CSS, shadcn/ui, Angular, Redux |
 
 ---
 
 ## 💼 Experience
 
-**Software Engineer - Frontend** @ **Paack** (Remote)  
-*Jul 2020 – Jun 2024*  
-- Built and maintained large-scale user platform using **Elm**; collaborated on API design.  
-- Evolved **Paack-UI** in-house design system for consistent, high-quality UX.  
-- Championed functional programming for predictable, testable code.
+**Independent Software Engineer** | Self-Employed (Remote)
+*Jul 2024 – Present*
+- Built and launched **Rishta Center** (rishta.center), a production matchmaking platform serving the Pakistani community — sole engineer handling all phases from spec/PRD and UI/UX through full-stack development to deployment
+- Architected zero-cost infrastructure on **Cloudflare** (Workers, D1, R2, Images) with trunk-based CI/CD, automated **Drizzle ORM** migrations, isolated prod/staging/preview environments, and **PageSpeed Insights** scores of ~90 performance / 100 across all other metrics
+- Designed "Give-to-Get" community model with rate-limited contact reveals (5/day), anti-scraping protections, and audit logging to prevent commercial data harvesting
+- Built 100% **Urdu RTL** interface with mobile-first responsive design, dual-script input (Urdu/Roman Urdu), and accessibility optimized for older users
+- Engineered 1:N multi-profile schema (up to 3 profiles/user) with gender-aware photo logic, **Cloudflare Images** face-cropping, and admin-only CSV bulk-upload for canonical data seeding
+- Built multiple portfolio projects ([CollabSpace](https://github.com/segmentationfaulter/collab-space), [Tickets Hive](https://github.com/segmentationfaulter/tickets_hive), [Bookmarks Manager API](https://github.com/segmentationfaulter/bookmarks-manager-api)) demonstrating event-driven architectures with **Inngest**, high-concurrency systems with **BullMQ/Redis**, multi-tenancy with **Better Auth**, and idiomatic **Golang** API design
 
-**Software Engineer - Frontend** @ **Motive (formerly KeepTruckin)** (Lahore)  
-*Jul 2019 – Jul 2020*  
-- Enhanced internal dashboard with **Angular & TypeScript** to boost operational efficiency.  
+**Software Engineer - Frontend** @ **Paack** (Remote)
+*Jul 2020 – Jun 2024*
+- Developed and maintained features for internal dashboards using **Elm**, collaborating with backend teams on API design and integration for microservices
+- Evolved **[Paack-UI](https://github.com/PaackEng/paack-ui)** in-house design system for consistent, high-quality UX
+- Championed functional programming for predictable, testable code
 
-**Software Engineer** @ **Arbisoft** (Lahore)  
-*Feb 2019 – Jun 2019*  
-- Enhanced client discussion board with **Node.js** backend features and performance improvements.
+**Software Engineer - Frontend** @ **Motive (formerly KeepTruckin)** (Lahore)
+*Jul 2019 – Jul 2020*
+- Enhanced internal dashboard with **Angular & TypeScript** to boost operational efficiency
 
-**Frontend Engineer** @ **Wavetec** (Lahore)  
-*May 2018 – Jan 2019*  
-- Led **React**-based queue management simulator for client strategy modeling.
+**Software Engineer** @ **Arbisoft** (Lahore)
+*Feb 2019 – Jun 2019*
+- Enhanced client discussion board with **Node.js** backend features and performance improvements
 
-**Associate Product Engineer** @ **Qubit** (Lahore)  
-*Nov 2017 – Apr 2018*  
-- Built **React** portal for previewing personalization recommendations.  
+**Frontend Engineer** @ **Wavetec** (Lahore)
+*May 2018 – Jan 2019*
+- Led **React**-based queue management simulator for client strategy modeling
 
-**Intern Developer** @ **Qubit** (Lahore)  
-*Feb 2017 – Oct 2017*  
-- Contributed to **React/Redux/Immutable.js** app for data import & merging.  
+**Associate Product Engineer** @ **Qubit** (Lahore)
+*Nov 2017 – Apr 2018*
+- Built **React** portal for previewing personalization recommendations
 
 ---
 
 ## 🚀 Personal Projects
 
-**TicketsHive (Node.js + TypeScript)**
-[github.com/segmentationfaulter/tickets_hive](https://github.com/segmentationfaulter/tickets_hive)
-High-concurrency event booking system built to handle thousands of simultaneous users competing for limited inventory. Architected with asynchronous job processing via **BullMQ & Redis**, optimistic locking in **PostgreSQL** for data integrity, and horizontally scalable API/worker services in a **Turborepo** monorepo. Achieves sub-100ms response times through async request-response pattern, full **TypeScript** type safety, and comprehensive error handling. Demonstrates production-grade patterns for flash sales and high-traffic scenarios.
+**[CollabSpace - Full-Stack Project Collaboration Platform](https://github.com/segmentationfaulter/collab-space)**
+- Engineered a collaboration platform using **Next.js (App Router, RSC, Suspense)**, **TypeScript**, and **tRPC** for end-to-end type safety
+- Implemented **multi-tenancy** (Workspaces) using **Better Auth Organizations**, enabling secure user roles and permissions management
+- Developed **event-driven background jobs** for automated notifications and invitations using **Inngest**
+- Designed a scalable relational schema with **PostgreSQL** and **Drizzle ORM**, ensuring high data integrity and performance
 
-**Bookmarks Manager API (Golang)**
-[github.com/segmentationfaulter/bookmarks-manager-api](https://github.com/segmentationfaulter/bookmarks-manager-api)
-Designed secure, performant RESTful API in Golang using standard library. Implemented clean, layered microservice architecture for scalability and maintainability. Used SQLite for data storage with efficient raw SQL queries for CRUD operations. Secured endpoints with JWT authentication and bcrypt password hashing.
+**[TicketsHive - High-Concurrency Event Booking System](https://github.com/segmentationfaulter/tickets_hive)**
+- Architected async queue-based system handling extreme concurrency scenarios with zero overbooking guarantee
+- Reduced API response latency using BullMQ/Redis job queues and async processing for immediate user feedback
+- Implemented **version-based optimistic locking** in PostgreSQL, enabling significantly higher throughput and eliminating database lock contention
+- Built production-ready monorepo with Turborepo, Docker, OpenAPI documentation, and horizontal scaling architecture
+- Designed comprehensive error handling, load testing suite, and graceful shutdown for production resilience
 
-**Real-world API (Node.js)**
-[github.com/segmentationfaulter/realworld_api](https://github.com/segmentationfaulter/realworld_api)
-Implemented the [RealWorld backend API specification](https://docs.realworld.build/specifications/backend/introduction/) — a production-grade Medium.com clone — using Node.js, Express, and PostgreSQL. Delivered comprehensive RESTful endpoint design, JWT authentication, and robust database modeling, then containerized the full application and database with Docker and Docker Compose for consistent, reproducible development and deployment environments.
-
-**Todo CLI (Golang)**
-[github.com/segmentationfaulter/todo-cli-app](https://github.com/segmentationfaulter/todo-cli-app)
-Command-line task manager in Go for adding, listing, completing, and deleting todos with JSON file storage, demonstrating idiomatic Go practices.
-
-**Hacker News PWA (React)**
-[github.com/segmentationfaulter/hnpwa](https://github.com/segmentationfaulter/hnpwa)
-Performant, responsive Progressive Web App for browsing Hacker News, built with React, showcasing component-based architecture and state management.
+**[Bookmarks Manager API (Golang)](https://github.com/segmentationfaulter/bookmarks-manager-api)**
+- Designed secure, performant RESTful API in Golang using standard library
+- Implemented clean, layered microservice architecture for scalability and maintainability
+- Used SQLite for data storage with efficient raw SQL queries for CRUD operations
+- Secured endpoints with JWT authentication and bcrypt password hashing
 
 ---
 
@@ -83,8 +86,8 @@ Performant, responsive Progressive Web App for browsing Hacker News, built with 
 
 ## 📬 Get in Touch
 
-- 📧 [muhammadsackib@gmail.com](mailto:muhammadsackib@gmail.com)  
-- 📞 +92 315 0776708 (GMT+5)  
-- 🔗 [linkedin.com/in/segfaulter](https://linkedin.com/in/segfaulter)  
+- 📧 [muhammadsackib@gmail.com](mailto:muhammadsackib@gmail.com)
+- 📞 +92 315 0776708 (GMT+5)
+- 🔗 [linkedin.com/in/segfaulter](https://linkedin.com/in/segfaulter)
 
-> Open to collaborating on backend, full-stack, or system design projects. Always learning — currently exploring **distributed systems, event-driven architectures, and scalability patterns**.
+> Open to full-stack, backend, or system design roles. Always learning — currently exploring **distributed systems, event-driven architectures, and scalability patterns**.
